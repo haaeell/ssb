@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSB | Banyurojo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <!-- Referensi ke library Slick Slider -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg card bg-body-tertiary ">
+        <div class="container">
+            <img src="https://i.pinimg.com/originals/99/ef/ef/99efef3c8eab76685114acd54e2dd839.png" width="50" alt="">
+          <a class="navbar-brand mx-3 fw-bold" href="#">SSB Banyurojo</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto px-2 gap-2">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Beranda</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">Tentang Kami</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#programs">Program</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#gallery">Galeri</a>
+                </li>
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
+
+      <!-- Hero -->
+      <div class="header row">
+        <div class="container d-flex flex-column justify-content-center align-items-center">
+            <img src="https://i.pinimg.com/originals/99/ef/ef/99efef3c8eab76685114acd54e2dd839.png" alt="Logo Sekolah Sepak Bola" class="logo">
+            <h1 class="headline">Sekolah Sepak Bola Banyurojo</h1>
+        </div>
+    </div>
+
+    <!-- About -->
+    <section id="about">
+        <div class="container py-5">
+            <div class="row d-flex justify-content-center align-items-center">
+                <div class="col-lg-8">
+                    <h2 class="text-center fw-bold mb-3">Tentang Kami</h2>
+                    <p>
+                        Sekolah Sepak Bola (SSB) kami adalah tempat di mana pemain muda dapat mengembangkan keterampilan sepak bola mereka dengan dukungan pelatih berkualitas dan fasilitas yang modern. Kami berkomitmen untuk menciptakan lingkungan yang kompetitif sambil mendorong nilai-nilai moral, disiplin, dan etika dalam olahraga.
+                    </p>
+                    <p>
+                        Visi kami adalah menjadi pusat unggulan dalam pengembangan bakat sepak bola yang berkualitas dan mencetak pemain-pemain masa depan yang berprestasi di tingkat nasional dan internasional. Misi kami adalah memastikan bahwa setiap pemain yang bergabung dengan kami dapat mencapai potensi sepenuhnya, baik di lapangan maupun di luar lapangan.
+                    </p>
+                    <button class="btn btn-success btn-cta mb-5">Hubungi Kami</button>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <img src="https://i.pinimg.com/originals/99/ef/ef/99efef3c8eab76685114acd54e2dd839.png" style="height: 300px;;" alt="Foto Tim SSB" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Program -->
+    <section id="programs">
+        <div class="container py-3">
+            <h2 class="text-center fw-bold mb-5">Program Pelatihan</h2>
+            <div class="row text-center">
+                <div class="col-lg-4 col-md-6 mb-3">
+                    <div class="program">
+                        <img src="images/junior.png" width="100" alt="Program 3" class="img-fluid">
+                        <h3>Program Pemula</h3>
+                        <p>Tingkat Usia: 4-6 tahun<br>
+                        Durasi: 6 minggu<br>
+                        Fokus Pelatihan: Pengenalan sepak bola</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-3">
+                    <div class="program">
+                        <img src="images/junior.png" width="100" alt="Program 1" class="img-fluid bordered">
+                        <h3>Program Junior</h3>
+                        <p>Tingkat Usia: 6-10 tahun<br>
+                        Durasi: 8 minggu<br>
+                        Fokus Pelatihan: Teknik dasar, permainan tim</p>
+                    </div>
+                    
+                </div>
+                <div class="col-lg-4 col-md-6 mb-3">
+                    <div class="program">
+                        <img src="images/junior.png" width="100" alt="Program 2" class="img-fluid">
+                        <h3>Program Remaja</h3>
+                        <p>Tingkat Usia: 11-15 tahun<br>
+                        Durasi: 12 minggu<br>
+                        Fokus Pelatihan: Taktik, keterampilan individu</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    
+    <!-- Jadwal  -->
+    <section id="schedule" >
+        <div class="container my-3 py-5 " style="box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px; border-radius: 16px;">
+            <h2 class="fw-bold text-center mb-5">Jadwal Latihan</h2>
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-10">
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-hover fs-5" >
+                            <thead>
+                                <tr class="table-success">
+                                    <th>Kelompok Usia</th>
+                                    <th>Hari</th>
+                                    <th>Waktu</th>
+                                    <th>Tempat</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Junior</td>
+                                    <td>Senin</td>
+                                    <td>16:00 - 18:00</td>
+                                    <td>Lapangan A</td>
+                                </tr>
+                                <tr>
+                                    <td>Remaja</td>
+                                    <td>Rabu</td>
+                                    <td>15:30 - 17:30</td>
+                                    <td>Lapangan B</td>
+                                </tr>
+                                <tr>
+                                    <td>Pemula</td>
+                                    <td>Jumat</td>
+                                    <td>17:00 - 19:00</td>
+                                    <td>Lapangan C</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    
+    <section id="gallery" class="my-5">
+        <div class="container py-5 bg-success" style="border-radius: 16px;">
+            <h2 class="fw-bold text-center mb-5 text-white">Galeri Foto</h2>
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-10">
+                    <div class="slider  py-3 px-3">
+                        <div class="card p-3 mx-2">
+                            <img src="images/lapangan.jpg" style="width: 100%;" alt="Foto 1">
+                        </div>
+                        <div class="card p-3 mx-2">
+                            <img src="images/lapangan.jpg" style="width: 100%;" alt="Foto 1">
+                        </div>
+                        <div class="card p-3 mx-2">
+                            <img src="images/lapangan.jpg" style="width: 100%;" alt="Foto 1">
+                        </div>
+                        <div class="card p-3 mx-2">
+                            <img src="images/lapangan.jpg" style="width: 100%;" alt="Foto 1">
+                        </div>
+                        <div class="card p-3 mx-2">
+                            <img src="images/lapangan.jpg" style="width: 100%;" alt="Foto 1">
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <script>
+        // Inisialisasi Slick Slider
+        $(document).ready(function(){
+            $('.slider').slick({
+                dots: true,
+                infinite: true,
+                speed: 500,
+                slidesToShow: 3, // Menampilkan 3 gambar sekaligus
+                adaptiveHeight: true
+            });
+        });
+    </script>
+    
+<!-- Footer -->
+
+    <footer class="bg-dark text-white py-3">
+        <div class="container">
+            <div class="row d-flex justify-content-between align-items-center">
+                <div class="col-md-6">
+                    <h2 class="fw-bold">Kontak</h2>
+                    <p>Hubungi kami di alamat berikut:</p>
+                    <address>
+                        <strong>SSB Banyurojo</strong><br>
+                        Banyurojo, Magelang<br>
+                        Jawa Tengah, 551863<br>
+                        <i class="bi bi-telephone"></i> Telepon: +6285321726312<br>
+                        <i class="bi bi-envelope"></i> Email: ssbbanyurojo@gmail.com<br>
+                    </address>
+                </div>
+                
+                <div class="col-md-4">
+                    <div id="map" style="width: 100%; height: 200px;"></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <div id="whatsappBtn" class="whatsapp-btn">
+        <a href="https://api.whatsapp.com/send?phone=6285321726312" class="nav-link" target="_blank">
+            <i class="bi bi-whatsapp"></i> 
+        </a>
+    </div>
+    <div id="scrollToTopBtn" class="scroll-to-top">
+        <i class="bi bi-arrow-up-short"></i>
+    </div>
+    
+    
+    
+    
+    
+
+
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <!-- Referensi ke library jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- Referensi ke library Slick Slider -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+<script>
+    // Inisialisasi Slick Slider
+    $(document).ready(function(){
+        $('.slider').slick({
+            dots: true,
+            infinite: true,
+            speed: 500,
+            slidesToShow: 3, // Menampilkan 3 gambar sekaligus
+            adaptiveHeight: true
+        });
+    });
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+    var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+    // Saat pengguna menggulir halaman lebih dari 100 piksel, tampilkan tombol WhatsApp
+window.addEventListener("scroll", function () {
+    if (window.pageYOffset > 100) {
+        scrollToTopBtn.style.display = "block";
+        whatsappBtn.style.display = "block";
+    } else {
+        scrollToTopBtn.style.display = "none";
+        whatsappBtn.style.display = "none";
+    }
+});
+
+
+    // Saat tombol diklik, gulir ke atas halaman
+    scrollToTopBtn.addEventListener("click", function () {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+});
+</script>
+
+
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+<script>
+    var map = L.map('map').setView([51.505, -0.09], 13);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+</script>
+
+
+</body>
+</html>

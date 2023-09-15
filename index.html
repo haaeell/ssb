@@ -153,11 +153,11 @@
         </div>
     </section>
     
-    <section id="gallery" class="my-5">
+    <section id="gallery" class="my-5 mx-3">
         <div class="container py-5 bg-success" style="border-radius: 16px;">
             <h2 class="fw-bold text-center mb-5 text-white">Galeri Foto</h2>
             <div class="row d-flex justify-content-center">
-                <div class="col-md-10">
+                <div class="col-md-10 mx-2">
                     <div class="slider  py-3 px-3">
                         <div class="card p-3 mx-2">
                             <img src="images/lapangan.jpg" style="width: 100%;" alt="Foto 1">
@@ -243,16 +243,23 @@
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
 <script>
-    // Inisialisasi Slick Slider
-    $(document).ready(function(){
-        $('.slider').slick({
-            dots: true,
-            infinite: true,
-            speed: 500,
-            slidesToShow: 3, // Menampilkan 3 gambar sekaligus
-            adaptiveHeight: true
-        });
+    $(document).ready(function () {
+    var slidesToShowValue = 3; // Jumlah gambar default untuk tampilan desktop
+
+    // Menggunakan media query untuk menyesuaikan jumlah gambar saat lebar layar kecil
+    if ($(window).width() < 768) {
+        slidesToShowValue = 1; // Jika layar kecil, tampilkan satu gambar
+    }
+
+    $('.slider').slick({
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: slidesToShowValue, // Menampilkan jumlah gambar yang sesuai
+        adaptiveHeight: true
     });
+});
+
 </script>
 
 <script>
